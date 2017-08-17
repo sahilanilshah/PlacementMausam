@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Aptitude</display-name>
+  <welcome-file-list>
+    <welcome-file>Controller</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Controller</display-name>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>com.controller.Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/Controller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Accenture_exam</display-name>
+    <servlet-name>Accenture_exam</servlet-name>
+    <servlet-class>com.controller.Accenture_exam</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accenture_exam</servlet-name>
+    <url-pattern>/Accenture_exam</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>examserv</display-name>
+    <servlet-name>examserv</servlet-name>
+    <servlet-class>com.controller.examserv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>examserv</servlet-name>
+    <url-pattern>/examserv</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Mock1_exam</display-name>
+    <servlet-name>Mock1_exam</servlet-name>
+    <servlet-class>com.controller.Mock1_exam</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Mock1_exam</servlet-name>
+    <url-pattern>/Mock1_exam</url-pattern>
+  </servlet-mapping>
+</web-app>

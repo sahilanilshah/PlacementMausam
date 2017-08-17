@@ -1,0 +1,2621 @@
+
+
+<html>
+
+<head>
+
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="GeeksLabs">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>Solution</title>
+
+    <!-- Bootstrap CSS -->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />    
+    <!-- full calendar css-->
+    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+	<link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <!-- easy pie chart-->
+    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+	<link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <!-- Custom styles -->
+	<link rel="stylesheet" href="css/fullcalendar.css">
+	<link href="css/widgets.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+	<link href="css/xcharts.min.css" rel=" stylesheet">	
+	<link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+	
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="js/lte-ie7.js"></script>
+    <![endif]-->
+<style>
+
+
+.dropbtn {
+	
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: grey;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: white;
+}
+
+
+h1{
+  font-size: 30px;
+  color:black  ;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+ td {
+    padding: 8px;
+    font-weight:bold;
+    color:black;
+    text-align: center;
+    border-bottom: 1px solid black;
+      
+}
+
+
+
+.button {
+    background-color: #B8DB34; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 8px
+}
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+p{
+
+font-size:18pt;
+color:black ;
+}
+
+
+p3{
+font-size:12pt; 
+}
+
+p2{
+font-size:125%; 
+font-weight:bold; 
+color:red;
+}
+
+
+p1{
+font-size:150%; 
+font-weight:bold; 
+color:green;
+}
+
+h2{
+  
+  color:black ;
+  font-weight:bold;
+ 
+}
+
+
+
+/* demo styles */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+   background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  
+  font-family: 'Roboto', sans-serif;
+      
+ 
+}
+
+section{
+
+ margin:80px 80px 100px 100px;
+}
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+hr { 
+  border: 0; 
+  height: 30px; 
+  border-style: solid; 
+  border-color: black; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: black; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+.noselect {
+   cursor: default;
+   -webkit-user-select: none;
+   -webkit-touch-callout: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+    font-size:14pt;
+}
+
+.noselect:focus {
+   outline: none;
+}
+
+
+</style>
+
+<script>
+// '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+function clickIE() {if (document.all) {return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// --> 
+
+
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
+      <header class="header dark-bg">
+           
+            <!--logo start-->
+            <!--<a href="" class="logo">DNA <span class="lite">Admin</span></a>-->
+			<a href="<%=response.encodeURL(request.getContextPath() + "/Controller?action=home") %>"><img src="img/aptilogo.png" width="150" height="100" ><span class="lite"></span></a>
+            <!--logo end-->
+
+          
+ <div class="top-nav notification-row">                
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+                    
+                    <!-- task notificatoin start -->
+                                       <!-- user login dropdown start-->
+                   
+					<b style="font-size: 16px;"><%=session.getAttribute("username")%></b>
+					<div class="dropdown">
+		<button class="dropbtn"><img alt="" src="img/dp.jpg" width="100" height="100"></button>
+		<div class="dropdown-content">
+			<a href="<%=response.encodeURL(request.getContextPath() + "/Controller?action=log-out1") %>">LOG OUT</a>
+			
+
+		</div>
+	</div>
+
+					
+					
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+      </header> 
+           
+
+
+<br><br><br><br><br>
+
+
+<%
+if(session.getAttribute("username") == null){
+	response.sendRedirect("index.jsp");
+}
+%>
+
+<br>
+<br>
+<br>
+<br>
+
+ 
+  <center><B><H1><U>VERBAL SECTION</U></H1></B></center> 
+  <section>
+ 
+  
+  <h2>1. We stood at the back ______ the theatre.</h2>
+			<br>
+			
+	<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=1;
+</sql:query>		
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="1" value="a">of<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="1" value="b">in<c:if test="${row.ans=='b'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="1" value="c">at<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="1" value="d">on<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="1" value="e">across<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></p></h2></c:if>
+		 </c:forEach>
+		
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Solution</button>
+  <div id="demo1" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>
+		 
+		
+		<hr>	
+
+
+ <h2>2. In the vacation, all the kids _____  our neighbourhood play cricket on the street. Some play basketball _______  a court marked by chalk. Others play ping-pong ______a neighbour's garage.</h2>
+			<br>
+			
+	<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=2;
+</sql:query>		
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="1" value="a">at, out, in<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="1" value="b">in, on, in<c:if test="${row.ans=='b'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="1" value="c">at, on , in<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="1" value="d">in, on, at<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="1" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+		
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Solution</button>
+  <div id="demo2" class="collapse">
+   
+  <br>
+   <p>
+   
+   No answer description available for this question.
+   
+   
+   </p>
+  </div>
+		 
+		<hr>	
+
+<h2>3. _____ having her lunch, she stood ______ the tree and waited _______ him.</h2>
+			<br>
+			
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=3;
+</sql:query>			
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="3" value="a">With, below, for<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="3" value="b">Done, under, for<c:if test="${row.ans=='b'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="3" value="c">Inside, further, to<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="3" value="d">About, across, into<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="3" value="e">After, under, for<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Solution</button>
+  <div id="demo3" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>		
+		<hr>	
+ 		
+ 		<h2>Directions for Questions 4-6: Choose the word nearest in meaning to the word in ITALICS from the given options.</h2>
+ 		<br>
+ 				
+<h2>4. Reading of poetry is not <i>congenial</i> to his taste.</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=4;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Helpful<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Preferable<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Beneficial<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">suited<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">similar<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">Solution</button>
+  <div id="demo4" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>	
+ 		
+ 		
+<h2>5. Mihir <i>vehemently</i> denied all the charges of corruption that were levelled against him.</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=5;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Devoutly<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Hysterically<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Serenely<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">arrogantly<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">forcefully<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5">Solution</button>
+  <div id="demo5" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>	
+
+ <h2>6. Because of a family <i>feud</i>, he never spoke to his wife's parents.</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=6;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Crisis<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Trouble<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Problem<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Quarrel<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Argument<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo6">Solution</button>
+  <div id="demo6" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>
+<h2>Directions for Questions 7-10: Choose the answer option which will correctly fill the blank.</h2><br>	
+		
+<h2>7. Albert Einstein was _____ famous scientist. Einstein won _______ Nobel Prize in Physics in 1921. Einstein left his country and lived in _______ States until he died in 1955.</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=7;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">a, the, an<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">a, the, the<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">a, an, the<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">an, an, the<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">a, a, the<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo7">Solution</button>
+  <div id="demo7" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>	
+
+			
+<h2>8. That country is ______ open economy and _____ strong proponent of free trade globally.</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=8;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">an, a<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">the, the<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">an, the<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">a, the<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">in, the<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo8">Solution</button>
+  <div id="demo8" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>	
+
+<h2>9. It is the grasping of power-combined ______ the thirst______ fame, which constitutes ambition.</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=9;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">No article required<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">of, the<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">of, with<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">and, the<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">with, for<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo9">Solution</button>
+  <div id="demo9" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>	
+
+
+<h2>10. The officer received _____ official letter from _____ Ministry of IT in _____ Central Government.</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=10;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">A, the, an<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">A, an, the<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">An, the, the<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">An, an, the <c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">No articles required<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo10">Solution</button>
+  <div id="demo10" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>	
+		
+<h2>Directions for Questions 11-16: Read the passage and answer the questions that follow on the basis of the information provided in the passage.</h2>
+<br>
+<textarea rows="15" cols="130" class="noselect" readonly="readonly" unselectable="on">
+The pioneers of the teaching of science imagined that its introduction into education would remove the conventionality, artificiality, and backward-look which were characteristic of classical studies, but they were gravely disappointed. So, too, in their time had the humanists thought that the study of the classical authors in the original would banish at once the dull pedantry and superstition of mediaeval scholasticism. The professional schoolmaster was a match for both of them, and has almost managed to make the understanding of chemical reactions as dull and as dogmatic an affair as the reading of Virgil's Aeneid. The chief claim for the use of science in education is that it teaches a child something about the actual universe in which he is living, in making him acquainted with the results of scientific discovery, and at the same time teaches him how to think logically and inductively by studying scientific method. A certain limited success has been reached in the first of these aims, but practically none at all in the second. Those privileged members of the community who have been through a secondary or public school education may be expected to know something about the elementary physics and chemistry of a hundred years ago, but they probably know hardly more than any bright boy can pick up from an interest in wireless or scientific hobbies out of school hours. As to the learning of scientific method, the whole thing is palpably a farce. Actually, for the convenience of teachers and the requirements of the examination system, it is necessary that the pupils not only do not learn scientific method but learn precisely  the reverse, that is, to believe exactly what they are told and to reproduce it when asked, whether it seems nonsense to them or not. The way in which educated people respond to such quackeries as spiritualism or astrology, not to say more dangerous ones such as racial theories or currency myths, shows that fifty years of education in the method of science in Britain or Germany has produced no visible effect whatever. The only way of learning the method of science is the long and bitter way of personal experience, and, until the educational or social systems are altered to make this possible, the best we can expect is the production of a  minority of people who are able to acquire some of the techniques of science and a still smaller minority who are able to use and  develop them.
+</textarea><br>					
+
+	 <h2>11. The author implies that the 'professional schoolmaster' has</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=11;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">no interest in teaching science<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">thwarted attempts to enliven education<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">aided true learning<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">supported the humanists<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">been a pioneer in both science and humanities<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo11">Solution</button>
+  <div id="demo11" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>				
+
+<h2>12. The author's attitude to secondary and public school education in the sciences is</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=12;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">ambivalent<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">neutral<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">supportive<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">satirical<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">contemptuous<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo12">Solution</button>
+  <div id="demo12" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>			
+
+	
+	<h2>13. The word 'palpably' most nearly means</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=13;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">ridiculously<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">obviously<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">markedly<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">tentatively<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">empirically<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo13">Solution</button>
+  <div id="demo13" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>			
+	
+	
+<h2>14. The author blames all of the following for the failure to impart scientific method through the education system except</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=14;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">poor teaching<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">examination methods<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">lack of direct experience<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">the social and education systems<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">lack of interest on the part of students<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo14">Solution</button>
+  <div id="demo14" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>
+		
+								
+<h2>15. If the author were to study current education in science to see how things have changed since he wrote the piece, he would probably be most interested in the answer to which of the following questions?</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=15;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Do students know more about the world about them?<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Do students spend more time in laboratories?<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Can students apply their knowledge logically?<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Have textbooks improved?<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Do they respect their teachers?<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo15">Solution</button>
+  <div id="demo15" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>
+			
+	
+<h2>Directions for Questions 16-18: Which of phrases given below each sentence should replace the underlined phrase to make the grammatically correct? If the sentence is correct as it is, mark 'E' as the answer.</h2>
+<br>	
+	
+<h2>16. They <u>were all shocked at</u> his failure in the tournament.</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=16;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">were shocked at all<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">had all shocked at<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">had all shocked by<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">had been all shocked on<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">No correction required<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo16">Solution</button>
+  <div id="demo16" class="collapse">
+   
+  <br>
+   <p>
+   
+  No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>
+	
+<h2>17. <u>If they cooperate together by dividing up their work</u>, they shall be over with the work faster.</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=17;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">if they cooperate together by dividing the work<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">if they cooperate by dividing up the work<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">if they cooperate by dividing the work<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">if they cooperate together by division of work<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">No correction required<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo17">Solution</button>
+  <div id="demo17" class="collapse">
+   
+  <br>
+   <p>
+   
+  Cooperate has an implicit meaning of together. It means 'work together', so together must be eliminated. Similarly, 'dividing' means 'breaking up', so 'up' from dividing needs to be eliminated.
+   
+   
+   </p>
+  </div>				 
+		<hr>			
+
+
+<h2>18. Armed with talents of a high intellect,<u>an actor with extra ordinary gifts and an ingenious criminal</u>, Mr. XYZ played an overbearing role in the sensationalisation of crime during the later years.</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=18;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">an actor with unbelievable intellect and an ingenious criminal<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">an ingenious actor and an extra ordinary gifted criminal<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">a gifted actor and an ingenious criminal<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">an extra ordinary gifted actor and an ingenious criminal<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">No correction required<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo18">Solution</button>
+  <div id="demo18" class="collapse">
+   
+  <br>
+   <p>
+   
+     No answer description available for this question.
+   
+   
+   </p>
+  </div>				 
+		<hr>			
+
+<h2>Directions for Questions 19-20: Choose the option which contains a pair of words related to each other in the same way as the pair given in capital letters.</h2>
+<br>
+			
+	<h2>19. OVATION : APPLAUSE ::</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=19;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Grief : Loss<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Rout : Defeat<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Triumph : Failure<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Pathway : Ruin<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Physique : Sturdy<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo19">Solution</button>
+  <div id="demo19" class="collapse">
+   
+  <br>
+   <p>
+   
+    Relation: Similar Meaning<br>
+	Rout means a terrible defeat.
+
+   </p>
+  </div>				 
+		<hr>				
+			
+	
+<h2>20. PAINT : BRUSH ::</h2>
+			<br>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='verbal' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=20;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Floor : Polish<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Conflagration : Match<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Cement : Travel<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Wallpaper : Ladder<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Pen : Refil<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo20">Solution</button>
+  <div id="demo20" class="collapse">
+   
+  <br>
+   <p>
+   
+    Relation: Action - causing thing<br>
+Paint in this question does not refer to the material noun but the process paint, which is done using a brush similarly a conflagration is caused by a match.
+
+
+   </p>
+  </div>				 
+		<hr>		
+
+	<br><br>
+	
+	<center><B><H1><U>LOGICAL SECTION</U></H1></B></center>
+		<BR><BR>	
+			
+<h2>Direction for Questions 1-5 : In the following questions, the symbols ?, < , >, = and + are used with the following meaning as illustrated below.<br>
+'A ? B' means 'A is neither greater than nor equal to B'<br>
+'A < B' means 'A is neither smaller than nor equal to B'<br>
+'A > B' means 'A is neither smaller than nor greater than B'<br>
+'A=B' means 'A is not smaller than B'<br>
+'A+B' means 'A is not greater than B'<br>
+Now each of the following questions, assuming the given statements to be true, find which of the three conclusions I, II and III given below them is/are definitely true and give your answer accordingly.
+</h2>			<br>
+
+<h2>1. Statements: J?K, K+L, M=N, M < K <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;Conclusions: I. K?N &nbsp;&nbsp;II. J>M &nbsp;&nbsp;III. L=J </h2>
+			<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=1;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">None are true<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Only I is true<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Only II and III are true<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Only III is true<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo21">Solution</button>
+  <div id="demo21" class="collapse">
+   
+  <br>
+   <p>
+   
+    No answer description available for this question.
+
+   </p>
+  </div>				 
+		<hr>		
+		
+		
+<h2>2. Statements: D?E, F < G, D < F, G < H <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Conclusions: I. H?E  &nbsp;&nbsp;   II. H < F  &nbsp;&nbsp;   III. H < F </h2>
+		<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=2;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">None of these<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Only I is true<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Only II is true<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Only III is true<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Only II and III are true<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo22">Solution</button>
+  <div id="demo22" class="collapse">
+   
+  <br>
+   <p>
+   
+    No answer description available for this question.
+
+   </p>
+  </div>				 
+		<hr>		
+		
+		
+		
+	<h2>3. Statements: D+B, D < A, A > C, C=E <br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;Conclusions: I. D < E  &nbsp;&nbsp;   II. B < E  &nbsp;&nbsp;   III. E=D </h2>
+		<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=3;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Only I and II are true<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Only I and III are true<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Only II and III are true<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">All are true<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo23">Solution</button>
+  <div id="demo23" class="collapse">
+   
+  <br>
+   <p>
+   
+    No answer description available for this question.
+
+   </p>
+  </div>				 
+		<hr>		
+			
+	
+<h2>4. Statements: A?B, C+A, C < D, D=E <br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;Conclusions: I. A=E  &nbsp;&nbsp;  II. C > E &nbsp;&nbsp;  III. D?A </h2>
+		<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=4;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Only III is true<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Only II is true<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Only I is true<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Only II and III are true<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">All are true<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo24">Solution</button>
+  <div id="demo24" class="collapse">
+   
+  <br>
+   <p>
+   
+    No answer description available for this question.
+
+   </p>
+  </div>				 
+		<hr>		
+	
+		
+<h2>5. Statements: X?Y, Y?Z, Z+V <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Conclusions: I. V?X  &nbsp;&nbsp;  II.Y?V   &nbsp;&nbsp; III.X?V </h2>	
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=5;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Only I is true<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Only II is true<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Only III is true<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Only either II or III is true<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Only II and III are true<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo25">Solution</button>
+  <div id="demo25" class="collapse">
+   
+  <br>
+   <p>
+   
+    No answer description available for this question.
+
+   </p>
+  </div>				 
+		<hr>				
+		
+<H2>Direction for Questions 6-10: Five Friends Anant, Benny, Candra, Den, Elony play five games Poker, Chess, Carrom, Monopoly, Table Tennis on five days Monday, Tuesday, Wednesday, Thursday, Friday.
+<BR>
+Following information is available.<br><BR>
+Benny plays Poker on Wednesday.<br>
+Den is not playing on first day whereas Candra is playing on Friday.<br>
+Anant, the Chess player is not playing on any of the first three days.<br>
+Carrom is played on Monday.<br>
+</H2>		
+	
+	
+	
+<h2>6. Who plays Carrom?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=6;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Anant<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Benny<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Candra<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Den<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Elony<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo26">Solution</button>
+  <div id="demo26" class="collapse">
+   
+  <br>
+  
+   
+  <table>
+  <tr>
+  <td>Person</td>
+    <td>Elony</td>
+    <td>Den</td>
+    <td>Benny</td>
+    <td>Anant</td>
+    <td>Candra</td>
+  
+  </tr>
+  
+  <tr>
+  <td>Day</td>
+    <td>Monday</td>
+    <td>Tuesday</td>
+    <td>Wednesday</td>
+    <td>Thursday</td>
+    <td>Friday</td>
+  
+  </tr>
+  
+  <tr>
+  <td>Game</td>
+    <td>Carrom</td>
+    <td>Monopoly/TT</td>
+    <td>Poker</td>
+    <td>Chess</td>
+    <td>TT/Monopoly</td>
+  
+  </tr>
+  
+   </table>
+  
+
+   
+  </div>				 
+		<hr>	
+		
+		
+		
+		
+<h2>7. On which day chess is played?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=7;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Monday<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Tuesday<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Thursday<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Friday<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Cannot be determined<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo27">Solution</button>
+  <div id="demo27" class="collapse">
+   
+  <br>
+   <br>
+  
+   
+  <table>
+  <tr>
+  <td>Person</td>
+    <td>Elony</td>
+    <td>Den</td>
+    <td>Benny</td>
+    <td>Anant</td>
+    <td>Candra</td>
+  
+  </tr>
+  
+  <tr>
+  <td>Day</td>
+    <td>Monday</td>
+    <td>Tuesday</td>
+    <td>Wednesday</td>
+    <td>Thursday</td>
+    <td>Friday</td>
+  
+  </tr>
+  
+  <tr>
+  <td>Game</td>
+    <td>Carrom</td>
+    <td>Monopoly/TT</td>
+    <td>Poker</td>
+    <td>Chess</td>
+    <td>TT/Monopoly</td>
+  
+  </tr>
+  
+   </table>
+  
+
+
+  </div>				 
+		<hr>   
+		
+  <h2>8. Who plays Monopoly?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=8;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Anant<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Candra<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Den<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Elony<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Cannot be determined<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo28">Solution</button>
+  <div id="demo28" class="collapse">
+   
+  <br>
+   <br>
+  
+   
+  <table>
+  <tr>
+  <td>Person</td>
+    <td>Elony</td>
+    <td>Den</td>
+    <td>Benny</td>
+    <td>Anant</td>
+    <td>Candra</td>
+  
+  </tr>
+  
+  <tr>
+  <td>Day</td>
+    <td>Monday</td>
+    <td>Tuesday</td>
+    <td>Wednesday</td>
+    <td>Thursday</td>
+    <td>Friday</td>
+  
+  </tr>
+  
+  <tr>
+  <td>Game</td>
+    <td>Carrom</td>
+    <td>Monopoly/TT</td>
+    <td>Poker</td>
+    <td>Chess</td>
+    <td>TT/Monopoly</td>
+  
+  </tr>
+  
+   </table>
+  
+
+
+  </div>				 
+		<hr>   		
+		
+<h2>9. Benny plays which game?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=9;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Carrom<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Monopoly<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Poker<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Badminton<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Cannot be determined<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo29">Solution</button>
+  <div id="demo29" class="collapse">
+   
+  <br>
+   <br>
+  
+   
+  <table>
+  <tr>
+  <td>Person</td>
+    <td>Elony</td>
+    <td>Den</td>
+    <td>Benny</td>
+    <td>Anant</td>
+    <td>Candra</td>
+  
+  </tr>
+  
+  <tr>
+  <td>Day</td>
+    <td>Monday</td>
+    <td>Tuesday</td>
+    <td>Wednesday</td>
+    <td>Thursday</td>
+    <td>Friday</td>
+  
+  </tr>
+  
+  <tr>
+  <td>Game</td>
+    <td>Carrom</td>
+    <td>Monopoly/TT</td>
+    <td>Poker</td>
+    <td>Chess</td>
+    <td>TT/Monopoly</td>
+  
+  </tr>
+  
+   </table>
+  
+
+
+  </div>				 
+		<hr>   			
+			
+		     
+<h2>10. If Table tennis is played by Den, which game is played on the last day?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=10;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Carrom<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Monopoly<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Chess<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Poker<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Cannot be determined<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo30">Solution</button>
+  <div id="demo30" class="collapse">
+   
+  <br>
+   <br>
+  
+   
+  <table>
+  <tr>
+  <td>Person</td>
+    <td>Elony</td>
+    <td>Den</td>
+    <td>Benny</td>
+    <td>Anant</td>
+    <td>Candra</td>
+  
+  </tr>
+  
+  <tr>
+  <td>Day</td>
+    <td>Monday</td>
+    <td>Tuesday</td>
+    <td>Wednesday</td>
+    <td>Thursday</td>
+    <td>Friday</td>
+  
+  </tr>
+  
+  <tr>
+  <td>Game</td>
+    <td>Carrom</td>
+    <td>TT</td>
+    <td>Poker</td>
+    <td>Chess</td>
+    <td>Monopoly</td>
+  
+  </tr>
+  
+   </table>
+  
+
+
+  </div>				 
+		<hr>   				       		
+		
+
+<h2>11. Harish said to Manohar 'You are the father of my brothers sons sister'. How is Harish related to Manohar?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=11;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Brother<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Uncle<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Son<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Father<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Grand father<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo31">Solution</button>
+  <div id="demo31" class="collapse">
+   
+  <br>
+   <p>
+   
+    No answer description available for this question.
+
+   </p>
+  </div>				 
+		<hr>           
+		
+		
+<h2>12. In a certain code language god is great is coded as "danny ki nanny", rose is red is coded as "manny janny ki" and god likes rose is coded as "danny si manny". How is the word Great coded?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=12;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">ki<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">nanny<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">si<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">janny<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">danny<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo32">Solution</button>
+  <div id="demo32" class="collapse">
+   
+  <br>
+   <p>
+   
+    No answer description available for this question.
+
+   </p>
+  </div>				 
+		<hr>       		
+
+<h2>13. Mehmood is facing South. He moves 6 kms to his left and reaches Sunset point. He then takes a right and moves 8 kms he then takes a left again and moves 6kms and reaches the beach. What is the direct distance between sunset point and the beach?
+</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=13;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">11kms<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">9kms<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">14kms<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">10kms<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">13kms<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo33">Solution</button>
+  <div id="demo33" class="collapse">
+   
+  <br>
+   <p>
+   
+    No answer description available for this question.
+
+   </p>
+  </div>				 
+		<hr>    
+
+
+<h2>14. Find the next number in the series:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C, F, H, L, N,?
+</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=14;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">R<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Q<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">V<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">S<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">T<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo34">Solution</button>
+  <div id="demo34" class="collapse">
+   
+  <br>
+   <p>
+   
+   Option- The letters in the series +3, +2, +4, +2, +5, ..
+
+   </p>
+  </div>				 
+		<hr>    
+
+
+ <h2>15. Find the next number in the series:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100, 101, 99, 102, 98, 103___?
+</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=15;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">109<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">107<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">96<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">110<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">97<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo35">Solution</button>
+  <div id="demo35" class="collapse">
+   
+  <br>
+   <p>
+   
+   The numbers in the series are obtained by alternately adding and subtracting consecutive natural numbers. 
+   <br>Eg: 101=100+1, 99=101-2 and so on.
+
+   </p>
+  </div>				 
+		<hr>  
+		
+
+<h2>16. If '-' means '/', '+' means '*', '/' means '-', '*' means '+', then which of the following equations is correct ?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=16;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">6+20-12/7-1=38<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">6*20-12*7+1=17<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">6+20-12/7*1=82<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">6/20*12+7-1=70<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of the above<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo36">Solution</button>
+  <div id="demo36" class="collapse">
+   
+  <br>
+   <p>
+   
+    No answer description available for this question.
+   
+
+   </p>
+  </div>				 
+		<hr>  
+		
+			
+  <h2>17. If you multiply all the numbers present on the keypad dial of your mobile phone, what will be the exact product?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=17;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">189200<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">189240<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">189160<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">189280<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of the above<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo37">Solution</button>
+  <div id="demo37" class="collapse">
+   
+  <br>
+   <p>
+   
+   Dial of the mobile phone has a 0. Multiplying by it will lead to 0.
+
+   </p>
+  </div>				 
+		<hr>  		
+
+     
+<h2>18. Vicky ranks seventh from the top and twenty-sixth from the bottom in his Maths Class. How many students are there in the Maths Class?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=18;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">34<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">33<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">32<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">31<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">30<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo38">Solution</button>
+  <div id="demo38" class="collapse">
+   
+  <br>
+   <p>
+   
+6 students have their ranks higher than Vicky in Maths Class<br>
+Then comes Vicky, and then 25 students with their ranks lower than Vicky<br>
+So, 6+1+25 = 32 Students
+   
+
+   </p>
+  </div>				 
+		<hr>  				
+
+        
+ <h2>19. At the end of the meeting held in XYZ Hotel, ten employees, all shake hands with each other once. How many handshakes will be there together?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=19;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">100<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">55<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">45<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">10!<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo39">Solution</button>
+  <div id="demo39" class="collapse">
+   
+  <br>
+   <p>
+   
+   Total number of handshakes in the XYZ Hotel = 9+8+7+6+5+4+3+2+1=45
+
+   </p>
+  </div>				 
+		<hr>  				
+
+  <h2>20. If we consider every second Saturday and all Sundays as holidays in a 30-day month beginning on Saturday in a particular year, then how many working days are there in that month?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='logical' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=20;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">20<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">23<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">22<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">21<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo40">Solution</button>
+  <div id="demo40" class="collapse">
+   
+  <br>
+   <p>
+   
+   Since the Month will begin on Saturday, so 2nd, 9th, 16th, 23th, 30th will be Sundays whereas 8th and 22nd will be second Saturday. 
+   <br>So we have 7 holidays.
+   <br>So Number of working days: 30-7=23. 
+
+   </p>
+  </div>				 
+		<hr>  		      
+   
+		
+<br><br>
+	
+	<center><B><H1><U>QUANTITATIVE SECTION</U></H1></B></center>
+		<BR><BR>
+		 
+<h2>1. On selling 20 hats at Rs. 840, there is a loss equal to the cost price of 8 hats. The cost price of a hat is:</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=1;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Rs. 45<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Rs. 60<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Rs. 70<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Rs. 80<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Data Inadequate<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo41">Solution</button>
+  <div id="demo41" class="collapse">
+   
+  <br>
+   <p>
+   (C.P. of 20 hats) - (S.P. of 20 hats) = (C.P. of 8 hats)<br>
+   C.P. of 12 hats = S.P. of 20 hats = Rs. 840.<br>
+   C.P. of 1 hat = Rs.(840/12)=Rs.70.
+   
+   </p>
+  </div>				 
+		<hr>  		    
+
+  <h2>2. Simple interest on a certain sum of money earned by Raju for 3 years at 5% per annum which is half the compound interest on Rs. 5000 for 2 years at 10% per annum. The sum placed on simple interest is:</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=2;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Rs. 1550<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Rs. 3500<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Rs. 1725<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Rs. 2000<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Rs. 3350.5<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo42">Solution</button>
+  <div id="demo42" class="collapse">
+   
+  <br>
+   <p>
+   C.I.	 = Rs.( 5000 x ( 1+(10/100) )<sup><p3>2</p3></sup> - 5000 )<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Rs.( 5000 x (11/10) x (11/10) -5000 )<br>	
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Rs. 1050.<br>
+   Sum  = Rs.(525 x 100)/(3 x 5) = Rs.3500.		
+   
+   
+   </p>
+  </div>				 
+		<hr>  		    
+
+
+ <h2>3. Suki, a vegetable vendor, sells vegetables of Rs. 435, Rs. 627, Rs. 685, Rs. 230 and Rs. 562 for 5 consecutive months. How much sale must he have in the sixth month so that he gets an average sale of Rs. 500?
+</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=3;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Rs. 550<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Rs. 600<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">Rs. 445<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Rs. 450<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Rs. 500<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo43">Solution</button>
+  <div id="demo43" class="collapse">
+   
+  <br>
+   <p>
+   Total sale for 5 months = Rs. (435 + 627 + 646 + 230 + 562) = 2500.<br>
+    Required sale = Rs. ( (500 x 6) - 2500 )<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Rs. (3000 - 2500)<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Rs. 500.
+    
+   
+   </p>
+  </div>				 
+		<hr>  	                   
+         
+<h2>4. Out of 8 consonants and 3 vowels, how many words of 5 consonants and 2 vowels can be formed?
+</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=4;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">846720<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">168<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">5040<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d"><sup><p3>8</p3></sup>C<sub><p3>5</p3></sub> X <sup><p3>3</p3></sup>C<sub><p3>2</p3></sub><c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">8! X 3!<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo44">Solution</button>
+  <div id="demo44" class="collapse">
+   
+  <br>
+   <p>
+   Number of ways of selecting (5 consonants out of 8) and (2 vowels out of 3) = ( <sup><p3>8</p3></sup>C<sub><p3>5</p3></sub> X <sup><p3>3</p3></sup>C<sub><p3>2</p3></sub> )<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   = ( (8 x 7 x 6)/(1 x 2 x 3) )  x  ( (3 x 2)/(1 x 2) )<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+= 168<br>
+Number of groups, each having 5 consonants and 2 vowels = 168.<br>
+	
+Each group contains 7 letters.<br>
+
+Number of ways of arranging 7 letters among themselves	= 7!<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+= 7 x 6 x 5 x 4 x 3 x 2 x 1<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= 5040.<br>
+ Required number of ways = (168 x 5040) = 846720.
+
+   </p>
+  </div>				 
+		<hr>  	   		
+
+<h2>5. Balls numbered 1 to 35 are mixed up and then a John picks a ball at random. What is the probability that the ball drawn has a number which is a multiple of 3 or 5?</h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=5;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">9/35<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">11/35<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">7/35<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">16/35<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">1/2<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo45">Solution</button>
+  <div id="demo45" class="collapse">
+   
+  <br>
+   <p>
+  Here, S = {1, 2, 3, 4, ...., 34, 35}.<br>
+
+Let E = event of getting a multiple of 3 or 5 = {3, 6 , 9, 12, 15, 18, 5, 10, 20, 21, 24, 25, 27, 30, 33, 35}.<br>
+
+ P(E) =	n(E) / n(S) =	16/35.
+   
+   
+   </p>
+  </div>				 
+		<hr>  	   	
+
+         
+
+
+<h2>6. If n is an odd integer, which of the following must be even?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1. 2n + 1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2. n + n + 2n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3. n + n x n<br></h2>
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=6;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">Only 3<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">Only 1<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">All of these<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">2 and 3<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo46">Solution</button>
+  <div id="demo46" class="collapse">
+   
+  <br>
+   <p>
+   
+   If n is an odd number, option 2 and 3 will lead to the even numbers.
+   </p>
+  </div>				 
+		<hr>  	   	         
+		
+
+ <h2>7. Cost of two articles are in the ratio 6 : 4 on the first there is 50% loss and on the second 40% gain, the overall percentage of loss? </h2>
+
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=7;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">14%<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">40%<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">10%<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">12.5%<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo47">Solution</button>
+  <div id="demo47" class="collapse">
+   
+  <br>
+   <p>
+   
+ Let 600 and 400 be the Cost prices.<br> 
+
+50% loss on first article = 300<br>
+
+40% gain on second article = 160<br>
+
+So, net loss 140 on Rs. 1000 So,<br>
+
+140/1000 x 100 = 14%
+   
+   </p>
+  </div>				 
+		<hr> 
+
+			
+<h2>8. The ratio of radius and height of a right circular cone which Mitul bought recently, is 6 : 8, and the volume is 96 &Pi; cm<sup><p3>3</p3></sup>. The curved surface area of cone will be? 
+</h2>
+		
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=8;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">60 &Pi; sq. cm<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">36 &Pi; sq. cm<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">44 &Pi; sq. cm<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">14 &Pi; sq. cm<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">56 &Pi; sq. cm<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo48">Solution</button>
+  <div id="demo48" class="collapse">
+   
+  <br>
+   <p>
+   6 : 8 = 3 : 4<br>
+(1/3) x &Pi; x (3k)<sup><p3>2</p3></sup> x (4k) = 96 &Pi;<br>
+
+9k<sup><p3>2</p3></sup> x 4k = 288<br>
+
+K<sup><p3>3</p3></sup> = 8<br>
+
+K = 2 <br>
+
+Radius = 6cm and Height = 8cm length = 10 cm<br>
+
+CSA = &Pi; x 10 x 6 = 60 &Pi;
+
+   
+   
+   </p>
+  </div>				 
+		<hr> 
+
+
+ <h2>9. A boat goes downstream in one seventh the time it takes to go upstream. The ratio of speed of boat in still water to that of stream is?
+ </h2>
+		
+<sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=9;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">1 : 7<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">4 : 1<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">2 : 3<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">7 : 1<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Data Inadequate<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo49">Solution</button>
+  <div id="demo49" class="collapse">
+   
+  <br>
+   <p>
+   By options alone we can get the answer. If we take the ratio 4:3, down stream speed will be 4+3=7 and upstream speed is 4-3=1. Ratio will be 7:1
+   
+   </p>
+  </div>				 
+		<hr>    
+ 
+
+ <h2>10. Nita in a car notices that she can count 31 telephone poles in one minute. If the distance between each pole is 50 m, then at what speed the car is running? (in km/hr) 
+ </h2>
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=10;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">90<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">64<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">72<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">60<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">Data Inadequate<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo50">Solution</button>
+  <div id="demo50" class="collapse">
+   
+  <br>
+   <p>
+   He watches 31 telephone poles go by, so ideally he covers 30 times the distance between 2 poles.<br> 
+
+Distance between 2 poles is 50m.<br>
+Distance between 30 poles will be 1500m = 1.5 km<br>
+
+He travels 1.5 Km in 1 minute, so will travel 1.5 x 60 km in 60 min = 90.
+   
+   
+   </p>
+  </div>				 
+		<hr>    
+ 
+
+
+<h2>11. (3x + 2)(2x - 5) = ax<sup>2</sup> + kx + n. What is the value of a - n + k ?
+ </h2>
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=11;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">11<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">5<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">8<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">9<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">10<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo51">Solution</button>
+  <div id="demo51" class="collapse">
+   
+  <br>
+   <p>
+  (3x + 2)(2x - 5)<br>
+= 6x<sup>2</sup> - 15x + 4x -10<br>
+= 6x<sup>2</sup> - 11x - 10<br>
+
+Thus, <br>
+a = 6, n = -10, k = -11<br>
+a - n + k = 6 + 10 - 11 = 5
+   
+   
+   </p>
+  </div>				 
+		<hr>    
+
+ <h2>12. If the radius of a circle is increased by 20% then the area is increased by :</h2>
+
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=12;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">400 %<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">40 %<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">144 %<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">120 %<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">44 %<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo52">Solution</button>
+  <div id="demo52" class="collapse">
+   
+  <br>
+   <p>
+   The formula for the radius of the original circle is  = &Pi;r<sup>2</sup> <br> 
+  
+The formula for the new radius is <br> 
+= &Pi;((1.2 * r)<sup>2</sup>)  <br>
+= &Pi;(1.44 * r<sup>2</sup>)  <br>
+  
+Thus, the area of the circle is increased by 44%.
+   
+   
+   </p>
+  </div>				 
+		<hr>    
+
+    
+<h2>13. Helpers are needed to prepare for a grand party. Each helper can make either 2 large cakes or 35 small cakes per hour. The kitchen is available for 3 hours and 20 large cakes and 700 small cakes are needed. How many helpers are required?</h2>
+
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=13;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">30<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">25<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">20<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">15<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">10<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo53">Solution</button>
+  <div id="demo53" class="collapse">
+   
+  <br>
+   <p>
+   20 large cakes will require the equivalent of 10 helpers working for one hour. 700 small cakes will require the equivalent of 20 helpers working for one hour. This means if only one hour were available we would need 30 helpers. But since three hours are available we can use 10 helpers.
+   
+   </p>
+  </div>				 
+		<hr>    		
+			
+			
+ <h2>14. The price of a XYZ car rises by 30% while the sales of the car came down by 20%. What is the percent change in the total revenue?</h2>
+
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=14;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">4 %<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">2 %<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">6 %<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">Total Revenue remains the same<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo54">Solution</button>
+  <div id="demo54" class="collapse">
+   
+  <br>
+   <p>
+   Assume that price is 100 and sales are also 100.<br> 
+   Total revenue is 100*100=10000(100%).<br>
+    Now price increased by 30%.<br> 
+    So new price is 130.<br> 
+    Similarly new sales are 80.<br>
+     Now revenue is 130*80=10400(104%)<br>
+      So total change is 4%
+   
+   </p>
+  </div>				 
+		<hr>                
+
+ <h2>15. Two liquids P and Q are in the ratio 5 : 1 in container A and in container B, they are in the ratio 1 : 3. In what ratio should the contents of the two containers be mixed so as to obtain a mixture of P and Q in the ratio 1 : 1?</h2>
+
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=15;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">2 : 3<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">4 : 3<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">3 : 4<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">3 : 2<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">3 : 5<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo55">Solution</button>
+  <div id="demo55" class="collapse">
+   
+  <br>
+   <p>
+   Let the total liquid in container = x<br>
+Quantity of P in container A = 5x/6<br>
+Quantity of Q in container A = x/6<br>
+Quantity of P in container B = x/4<br>
+Quantity of Q in container B = 3x/4<br>
+
+New ratio of P and Q = 1:1<br>
+Let quantity container A mix = n<br>
+Let quantity container B mix = m<br>
+
+Now Quantity of P = 5xn/6 + xm/4 = x(5n/6 + m/4)<br>
+Now Quantity of Q = xn/6 + 3xm/4 = x(n/6 + 3m/4)<br>
+As new quantity of P and Q are equal,<br>
+
+5n/6 + m/4 = n/6 +3m/4<br>
+4n/6 = 2m/4<br>
+n/m = 3/4
+   
+   
+   </p>
+  </div>				 
+		<hr>                
+		
+
+	<h2>Directions for Questions 16-20:Study the following table carefully and answer the questions given below it.</h2>
+	<br>
+	<h2>Percentage of Marks Obtained by Various Students in Various Subjects in an Examination </h2>
+	<br>
+	<table>
+	<tr>
+	<td>Student</td>
+	<td>English (out of 100)</td>
+	<td>Hindi (out of 100)</td>
+	<td>Science (out of 150)</td>
+	<td>History (out of 60)</td>
+	<td>Maths (out of 150)</td>
+	<td>Geography (out of 40)</td>
+	</tr>
+<tr>
+<td>Jeet</td>
+<td>68</td>
+<td>75</td>
+<td>82</td>
+<td>60</td>
+<td>96</td>
+<td>55</td>
+</tr>
+
+	
+<tr>
+<td>Jainam</td>
+<td>88</td>
+<td>73</td>
+<td>85</td>
+<td>65</td>
+<td>88</td>
+<td>65</td>
+</tr>	
+
+<tr>
+<td>Chirag</td>
+<td>75</td>
+<td>56</td>
+<td>72</td>
+<td>75</td>
+<td>75</td>
+<td>80</td>
+</tr>
+	
+<tr>
+<td>Parth</td>
+<td>70</td>
+<td>66</td>
+<td>80</td>
+<td>80</td>
+<td>72</td>
+<td>62</td>
+</tr>	
+
+<tr>
+<td>Nilay</td>
+<td>72</td>
+<td>60</td>
+<td>68</td>
+<td>74</td>
+<td>68</td>
+<td>75</td>
+</tr>	
+
+<tr>
+<td>Yash</td>
+<td>85</td>
+<td>70</td>
+<td>90</td>
+<td>70</td>
+<td>74</td>
+<td>70</td>
+</tr>	
+	
+</table>
+	
+ <br>
+ 		
+	
+  <h2>16. What is the overall approximate percentage obtained by Chirag in the examination?
+</h2>
+		
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=16;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">78<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">69<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">75<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">71<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">65<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo56">Solution</button>
+  <div id="demo56" class="collapse">
+   
+  <br>
+   <p>
+   Total marks obtained by Chirag in the examination= 75% of 100 + 56% of 100 + 72% of 150 + 75% of 60 + 75% of 150 + 80% of 40<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+= 75+56+108+45+112.5+32<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+=428.5<br>
+Required percentage = (428.5/600)*100 = 71%
+
+   
+   
+   </p>
+  </div>				 
+		<hr>    	
+	
+						
+ <h2>17. What is the difference in the marks obtained by Jainam in English and Maths and the marks obtained by Yash in the same subjects?
+</h2>
+		
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=17;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">24<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">17<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">15<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">28<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo57">Solution</button>
+  <div id="demo57" class="collapse">
+   
+  <br>
+   <p>
+   Difference of marks obtained by Jainam and Yash in English = 3% of 100 = 3<br>
+Difference of marks obtained by Jainam and Yash in Maths = 14% of 150 = 21<br>
+Total difference = 21+3=24 
+   
+   
+   </p>
+  </div>				 
+		<hr>    				
+
+<h2>18. The marks obtained by Nilay in Geography are what percent of the marks obtained by Nilay in Hindi?
+</h2>
+		
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=18;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">45<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">55<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">50<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">60<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo58">Solution</button>
+  <div id="demo58" class="collapse">
+   
+  <br>
+   <p>
+   
+   Required percentage = (75% of 40 / 60% of 100)*100 = 50%
+   </p>
+  </div>				 
+		<hr>  		
+	
+<h2>19. What is the overall percentage obtained by Parth in History and Geography Together?
+</h2>
+		
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=19;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">73.40<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">72.80<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">70.50<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">68.80<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo59">Solution</button>
+  <div id="demo59" class="collapse">
+   
+  <br>
+   <p>
+   Marks obtained by Parth in History= 80% of 60 = 48<br>
+Marks obtained by Parth in Geography= 62% of 40=24.8<br>
+Required percentage = ( (48.7+24.8)/100 )*100 = 72.80%
+   
+   </p>
+  </div>				 
+		<hr>  	
+			
+
+<h2>20. What are the average marks obtained by all the students together in Science?
+</h2>
+		
+ <sql:query dataSource="${ds}" var="result">
+SELECT * from mock_solution where username='<c:out value="${username }"></c:out>' AND section='quants' AND testname='<c:out value="${testpaper1 }"></c:out>' AND id=20;
+</sql:query>
+			<c:forEach var="row" items="${result.rows}">	
+		<p>
+			<input type="radio" name="4" value="a">77.16<c:if test="${row.ans=='a'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='a' && row.ans!='a'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="b">120.50<c:if test="${row.ans=='b'}"><p1>   &#10004;</p1></c:if><c:if test="${row.my_ans=='b' && row.ans!='b'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="c">118<c:if test="${row.ans=='c'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='c' && row.ans!='c'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="d">121<c:if test="${row.ans=='d'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='d' && row.ans!='d'}"><p2>  X</p2></c:if><br>
+			<input type="radio" name="4" value="e">None of these<c:if test="${row.ans=='e'}"><p1>  &#10004;</p1></c:if><c:if test="${row.my_ans=='e' && row.ans!='e'}"><p2>  X</p2></c:if><br>
+			</p>
+			<c:if test="${row.my_ans==''}"><h2><p>Not Attempted<br></h2></p></c:if>
+		 </c:forEach>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo60">Solution</button>
+  <div id="demo60" class="collapse">
+   
+  <br>
+   <p>
+   Average marks obtained by all students in Science =150% of (82+85+72+80+68+90)/6<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   = (3/2) * (477/6)<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   = 119.25
+   
+   
+   </p>
+  </div>				 
+		<hr>  	
+						
+
+  </section>
+ 
+</body>
+ <script>
+
+      //knob
+      $(function() {
+        $(".knob").knob({
+          'draw' : function () { 
+            $(this.i).val(this.cv + '%')
+          }
+        })
+      });
+
+      //carousel
+      $(document).ready(function() {
+          $("#owl-slider").owlCarousel({
+              navigation : true,
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem : true
+
+          });
+      });
+
+      //custom select box
+
+      $(function(){
+          $('select.styled').customSelect();
+      });
+	  
+	  /* ---------- Map ---------- */
+	$(function(){
+	  $('#map').vectorMap({
+	    map: 'world_mill_en',
+	    series: {
+	      regions: [{
+	        values: gdpData,
+	        scale: ['#000', '#000'],
+	        normalizeFunction: 'polynomial'
+	      }]
+	    },
+		backgroundColor: '#eef3f7',
+	    onLabelShow: function(e, el, code){
+	      el.html(el.html()+' (GDP - '+gdpData[code]+')');
+	    }
+	  });
+	});
+
+
+
+  </script>
+
+
+
+
+
+
+</html>
+
+
+
+<%--
+
+		
+
+			
+				
+
+	
+			
+		
+
+ 
+			
+	
+			
+  
+
+
+
+
+
+
+
+
+ --%>

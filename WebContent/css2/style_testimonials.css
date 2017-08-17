@@ -1,0 +1,71 @@
+
+.column1 {
+    float: left;
+    width: 30%;
+    margin-bottom: 3%;
+    padding: 0px 2px;
+	margin-left:2.5%;	
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column1 {
+        margin:auto;
+        width: 100%;
+        padding:15px;
+        display: block;
+    }
+
+.button1 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+	
+	
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container1 {
+    padding: 0 16px;
+	background-color:white;
+}
+
+/* Clear floats */
+.container1::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title1 {
+    color: black;
+}
+
+.button1 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button1:hover {
+    background-color: #555;
+}
+
