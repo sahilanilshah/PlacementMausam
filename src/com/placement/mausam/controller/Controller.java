@@ -1,8 +1,8 @@
-package com.controller;
+package com.placement.mausam.controller;
 
-import com.beans.Admin;
-import com.beans.User;
-import com.model.Modify;
+import com.placement.masaum.roles.Admin;
+import com.placement.masaum.roles.User;
+import com.placement.mausam.model.Modify;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -118,7 +118,7 @@ extends HttpServlet {
 			
             
         try {
-			account.registeruser(date,firstname, lastname, email, college, mobile);
+			account.registerUser(date,firstname, lastname, email, college, mobile);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -283,7 +283,7 @@ request.getRequestDispatcher("pass.jsp").forward((ServletRequest)request, (Servl
         	Admin t1=new Admin();
         	
         	try {
-				t1.adduser(firstname,lastname,date,contact_no,email,username1,password);
+				t1.addUser(firstname,lastname,date,contact_no,email,username1,password);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -323,7 +323,7 @@ request.getRequestDispatcher("pass.jsp").forward((ServletRequest)request, (Servl
   	Admin t1=new Admin();
   	
   	try {
-		t1.updateuser(firstname,lastname,date,contact_no,email,username1,password);
+		t1.updateUser(firstname,lastname,date,contact_no,email,username1,password);
 	} catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

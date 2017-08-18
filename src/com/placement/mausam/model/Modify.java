@@ -1,4 +1,4 @@
-package com.model;
+package com.placement.mausam.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,17 +8,18 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-
 public class Modify {
-	 String user = "rootadmin";
-	    String passwd = "sahilshah@9";
-	static String driver = "com.mysql.jdbc.Driver";
-  //  String url = "jdbc:mysql://localhost:3306/aptitudedb";
-    
-	static String url="jdbc:mysql://localhost:3306/aptitudedb?user=rootadmin&password=sahilshah@9";
-	   
-	     static Connection con;
-	     static ResultSet rs = null;
+	
+	private final static String USER = "rootadmin";
+	private final static String PASSWORD = "sahilshah@9";
+    private final static String DRIVER = "com.mysql.jdbc.Driver";
+    private final static String CONNECTION_STRING = "jdbc:mysql://localhost:3306/aptitudedb?";
+    private final static String CONNECTION_URL = CONNECTION_STRING + 
+    											 "user="+ USER + "&" +
+    											 "password="+PASSWORD;
+       
+	    static Connection con;
+	    static ResultSet rs = null;
 	    
 	    public void change(String username,int srno) throws Exception{
 	    	

@@ -1,4 +1,4 @@
-package com.controller;
+package com.placement.mausam.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.model.Modify;
+import com.placement.mausam.model.Modify;
 
 public class Mock1_exam extends HttpServlet {
 
