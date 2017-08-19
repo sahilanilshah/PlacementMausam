@@ -17,7 +17,37 @@ public class Modify {
     private final static String CONNECTION_URL = CONNECTION_STRING + 
     											 "user="+ USER + "&" +
     											 "password="+PASSWORD;
-       
+    
+    private final static String CHECK_RANK_QUERY = "SELECT " +
+			 								 	   "RANK " +
+			 								 	   "FROM " +
+			 								 	   "RANKS " +
+			 								 	   "WHERE username = ? " +
+			 								 	   "AND testname = ?";
+
+    private final static String GIVE_FEEDBACK = "INSERT  INTO FEEDBACK " +
+    											"(DATE, TESTNAME, USERNAME, COMMENT) " +
+    											"VALUES (?,?,?,?)";
+    
+    private final static String GET_ANSWER_KEY = "SELECT ANS " +
+    											 "FROM MOCK_PAPER " +
+    											 "WHERE testname = ? " +
+    											 "AND section = ? " +
+    											 "ORDER BY ID";
+    
+    private final static String INSERT_RANKS = "INSERT INTO RANKS " +
+    										   "(TESTNAME, RANK, USERNAME, VERBAL, LOGICAL, QUANTS, TOTAL) " +
+    										   "VALUES (?,?,?,?,?,?,?)";
+    
+    private final static String UPDATE_MOCK_STATUS = "UPDATE MOCKS " +
+    												 "SET status = ? " +
+    												 "WHERE srno = ? " +
+    												 "AND username = ?";
+    
+    private final static String INSERT_MY_ANSWER = "INSERT INTO MOCK_SOLUTION " +
+    											   "(USERNAME, TESTNAME, ID, SECTION, ANS, MY_ANS) " +
+    											   "VALUES (?,?,?,?,?,?)";
+    
 	    static Connection con;
 	    static ResultSet rs = null;
 	    
@@ -25,8 +55,7 @@ public class Modify {
 	    	
 	    	db_connect();
 	    	
-	    	String sql = "update mocks set status=? where srno=? AND username=?";
-	    	PreparedStatement pstmt = con.prepareStatement(sql);
+	    	PreparedStatement pstmt = con.prepareStatement(UPDATE_MOCK_STATUS);
 
 			pstmt.setString(1,"VIEW SOLUTION");
 			pstmt.setInt(2,srno);
@@ -92,8 +121,7 @@ public static synchronized  void createSolution1(String username,String testname
 			
 			for(int i=0;i<id.size();i++){
 				
-				 sql = "insert into mock_solution(username,testname,id,section,ans,my_ans) values (?,?,?,?,?,?)";
-		         pstmt = con.prepareStatement(sql);
+				 pstmt = con.prepareStatement(INSERT_MY_ANSWER);
 		         pstmt.setString(1, username);
 		         pstmt.setString(2, testname);
 		        pstmt.setInt(3, id.get(i));
@@ -165,8 +193,7 @@ public void myanswer1(String username,String testname,ArrayList<String> myanswer
 	    	
 	    	
 	    	
-	    	String sql = "insert into ranks(testname,rank,username,verbal,logical,quants,total) values (?,?,?,?,?,?,?)";
-	        PreparedStatement pstmt = con.prepareStatement(sql);
+	    	PreparedStatement pstmt = con.prepareStatement(INSERT_RANKS);
 	       
 	        pstmt.setString(1, testname);
 	        pstmt.setInt(2, 1);
@@ -255,9 +282,7 @@ public void myanswer1(String username,String testname,ArrayList<String> myanswer
  	 int rank=0;
 
  	
- 	
- 	String sql = "select rank from ranks where username = ? AND testname=?";
- 	PreparedStatement pstmt = con.prepareStatement(sql);
+ 	PreparedStatement pstmt = con.prepareStatement(CHECK_RANK_QUERY);
 
 		pstmt.setString(1,username);
 		pstmt.setString(2,testname);
@@ -292,8 +317,7 @@ public void myanswer1(String username,String testname,ArrayList<String> myanswer
 
 	 	String s1="";
 	 	
-	 	String sql = "select ans from mock_paper where testname=? AND section = ? order by id";
-	 	PreparedStatement pstmt = con.prepareStatement(sql);
+	 	PreparedStatement pstmt = con.prepareStatement(GET_ANSWER_KEY);
 
 			
 	 	pstmt.setString(1,testname);
@@ -329,8 +353,7 @@ public void myanswer1(String username,String testname,ArrayList<String> myanswer
  	db_connect();
  	
  	
-			String sql = "insert into feedback(date,testname,username,comment) values (?,?,?,?)";
-			PreparedStatement   pstmt = con.prepareStatement(sql);
+			PreparedStatement   pstmt = con.prepareStatement(GIVE_FEEDBACK);
 	         pstmt.setString(1, date);
 	         pstmt.setString(2, testname);
 	         pstmt.setString(3, username);
@@ -353,8 +376,8 @@ public void myanswer1(String username,String testname,ArrayList<String> myanswer
 	    
 	    
 	    private static  void db_connect() throws Exception {
-			Class.forName(driver);
-			con = DriverManager.getConnection(url);
+			Class.forName(DRIVER);
+			con = DriverManager.getConnection(CONNECTION_URL);
 		}
 
 		private static  void db_close() throws SQLException {
